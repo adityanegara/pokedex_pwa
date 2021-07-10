@@ -1,0 +1,113 @@
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+$secondary-color : #990d35;
+$primary-color : #d52941;
+$white-color : #f8f9fa;
+$font-nunito : 'Nunito', sans-serif;
+$font-regular : 400;
+$font-semi-bold : 600;
+$font-bold : 700;
+
+body{
+    font-family: $font-nunito;
+    background-color: $primary-color;
+
+}
+
+.navbar-toggler{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: 1px solid $white-color;
+    color:  $white-color;
+    transition: ease-in-out 0.4s;
+    background-color: $primary-color;
+}
+.navbar-toggler:hover{
+    background-color: $secondary-color;
+    border: 1px solid $primary-color;
+}
+
+.form-control:focus {
+    border-color: white;
+    box-shadow: inset 0 1px 1px rgba(102, 36, 36, 0.075), 0 0 8px rgb(255, 255, 255, 0.6);
+  }
+
+
+main{
+    .card{
+        background-color: $primary-color;
+        border-color: $white-color;
+        color: $white-color;
+    }
+}
+
+.navbar-toggler-icon{
+  font-size: 1.1em;
+  margin-top: 1.5vh;
+}
+.custom-button{
+    border: 1px solid $secondary-color;
+    color:  $white-color;
+    transition: ease-in-out 0.4s;
+    background-color: $primary-color;
+}
+
+.custom-button-white{
+    color:  $primary-color;
+    transition: ease-in-out 0.4s;
+    background-color: $white-color;
+}
+
+footer{
+    border-top: 3px solid $white-color;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    color: $white-color;
+}
+
+.custom-button-white:hover{
+    border: 1px solid $white-color;
+    color : $white-color;
+    transition: ease-in-out 0.4s;
+    background-color: $primary-color;
+}
+
+.custom-button:hover{
+    background-color: $secondary-color;
+    color:  $white-color; 
+    border: 1px solid $primary-color;
+}
+
+nav{
+    margin-top: 2vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-bottom: 3px solid $white-color;
+    border-radius: px;
+  
+    ul{
+        li{
+            margin-left: 1vw;
+            a{
+                color: $white-color !important;
+                transition: ease-in-out 0.4s;
+            }
+            a:hover{
+                color : $secondary-color !important;
+            }
+        }
+    }
+   
+
+    .navbar-brand{
+        text-decoration: none;
+        color: $white-color;
+        transition: ease-in-out 0.4s;
+        font-weight: 700;
+    }
+    .navbar-brand:hover{
+        color: $secondary-color;
+    }
+}
