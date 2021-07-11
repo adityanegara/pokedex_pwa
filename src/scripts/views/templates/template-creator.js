@@ -7,7 +7,7 @@ const createPokemonItemTemplate = (pokemon) =>
         <img class="card-img-top p-5" src="${(CONFIG.BASE_IMAGE_URL + getPokemonId(pokemon))}.png"/>
             <div class="card-body text-center">
                 <h5 class="card-title text-capitalize">${pokemon.name}</h5>
-                <a href="${`/#/detail/${getPokemonId(pokemon)}`}">
+                <a href="#/detail/${getPokemonId(pokemon)}">
                 <div class="d-grid gap-2">
                         <button class="btn custom-button-white" type="button">
                             Detail
