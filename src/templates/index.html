@@ -8,7 +8,7 @@
     <link rel="icon" href="../public/icons/pokeball_64.png">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg">
+  <nav id="navbar_element" class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Pokedex</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,13 +17,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Gen 1</a>
+            <a class="nav-link"  href="#/gen1">Gen 1</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Gen 2</a>
+            <a class="nav-link" href="#/gen2">Gen 2</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Gen 3</a>
+            <a class="nav-link" href="#/gen3">Gen 3</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -34,117 +34,9 @@
     </div>
   </nav>
 
-  <main>
-  <div class="row mt-4 ms-5 me-5 ms-1 me-1">
-    <div class = "col-md-4 col-lg-3 col-sm-12 mt-3"> 
-      <div class="card mb-3 mx-auto" >
-          <img class="card-img-top p-5" src="../public/bulbasaur.png" alt="Card image cap"/>
-              <div class="card-body text-center">
-                  <h5 class="card-title text-capitalize">Bulbasaur</h5>
-                  <div class="d-grid gap-2">
-                 
-                    <button class="btn custom-button-white" type="button">Detail</button>
-                  </div>
-              </div>
-      </div>
-    </div>
-
-    <div class = "col-md-4 col-lg-3 col-sm-12 mt-3"> 
-      <div class="card mb-3 mx-auto" >
-          <img class="card-img-top p-5" src="../public/bulbasaur.png" alt="Card image cap"/>
-              <div class="card-body text-center">
-                  <h5 class="card-title text-capitalize">Bulbasaur</h5>
-                  <div class="d-grid gap-2">
-                 
-                    <button class="btn custom-button-white" type="button">Detail</button>
-                  </div>
-              </div>
-      </div>
-    </div>  
-
-    <div class = "col-md-4 col-lg-3 col-sm-12 mt-3"> 
-      <div class="card mb-3 mx-auto" >
-          <img class="card-img-top p-5" src="../public/bulbasaur.png" alt="Card image cap"/>
-              <div class="card-body text-center">
-                  <h5 class="card-title text-capitalize">Bulbasaur</h5>
-                  <div class="d-grid gap-2">
-                 
-                    <button class="btn custom-button-white" type="button">Detail</button>
-                    
-                  </div>
-              </div>
-              
-      </div>
-    </div>  
-
-    <div class = "col-md-4 col-lg-3 col-sm-12 mt-3"> 
-      <div class="card mb-3 mx-auto" >
-          <img class="card-img-top p-5" src="../public/bulbasaur.png" alt="Card image cap"/>
-              <div class="card-body text-center">
-                  <h5 class="card-title text-capitalize">Bulbasaur</h5>
-                  <div class="d-grid gap-2">
-                 
-                    <button class="btn custom-button-white" type="button">Detail</button>
-                  </div>
-              </div>
-      </div>
-    </div>  
-
-    <div class = "col-md-4 col-lg-3 col-sm-12 mt-3"> 
-      <div class="card mb-3 mx-auto" >
-          <img class="card-img-top p-5" src="../public/bulbasaur.png" alt="Card image cap"/>
-              <div class="card-body text-center">
-                  <h5 class="card-title text-capitalize">Bulbasaur</h5>
-                  <div class="d-grid gap-2">
-                 
-                    <button class="btn custom-button-white" type="button">Detail</button>
-                  </div>
-              </div>
-      </div>
-    </div>  
-    <div class = "col-md-4 col-lg-3 col-sm-12 mt-3"> 
-      <div class="card mb-3 mx-auto" >
-          <img class="card-img-top p-5" src="../public/bulbasaur.png" alt="Card image cap"/>
-              <div class="card-body text-center">
-                  <h5 class="card-title text-capitalize">Bulbasaur</h5>
-                  <div class="d-grid gap-2">
-                 
-                    <button class="btn custom-button-white" type="button">Detail</button>
-                  </div>
-              </div>
-      </div>
-    </div>  
-    <div class = "col-md-4 col-lg-3 col-sm-12 mt-3"> 
-      <div class="card mb-3 mx-auto" >
-          <img class="card-img-top p-5" src="../public/bulbasaur.png" alt="Card image cap"/>
-              <div class="card-body text-center">
-                  <h5 class="card-title text-capitalize">Bulbasaur</h5>
-                  <div class="d-grid gap-2">
-                 
-                    <button class="btn custom-button-white" type="button">Detail</button>
-                  </div>
-              </div>
-      </div>
-    </div>  
-    <div class = "col-md-4 col-lg-3 col-sm-12 mt-3"> 
-      <div class="card mb-3 mx-auto" >
-          <img class="card-img-top p-5" src="../public/bulbasaur.png" alt="Card image cap"/>
-              <div class="card-body text-center">
-                  <h5 class="card-title text-capitalize">Bulbasaur</h5>
-                  <div class="d-grid gap-2">
-                 
-                    <button class="btn custom-button-white" type="button">Detail</button>
-                  </div>
-              </div>
-      </div>
-    </div>  
-
-    
-  </div>
-  
-
+  <main id="main_element" class="row mt-4 ms-5 me-5 ms-1 me-1" >
   </main>
-  <footer class=" text-center text-lg-start">
+  <footer id="footer_element" class=" text-center text-lg-start">
     <div class="text-center p-3" >
       © 2021 Copyright: adityanegara
     </div>

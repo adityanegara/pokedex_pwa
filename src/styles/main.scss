@@ -53,7 +53,10 @@ main{
     transition: ease-in-out 0.4s;
     background-color: $primary-color;
 }
-
+a{
+    text-decoration: none;
+    
+}
 .custom-button-white{
     color:  $primary-color;
     transition: ease-in-out 0.4s;
