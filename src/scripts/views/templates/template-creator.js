@@ -1,5 +1,26 @@
 import CONFIG from '../../globals/config';
 
+
+
+const createPokemonCatchTemplate = (pokemon) => `
+<div class = "col-md-4 col-lg-4 col-sm-12 mt-3"> 
+<div class="card mb-3 mx-auto" >
+    <img class="card-img-top p-5" src="${(CONFIG.BASE_IMAGE_URL + pokemon.id)}.png"/>
+        <div class="card-body text-center">
+            <h5 class="card-title text-capitalize">${pokemon.name}</h5>
+            <a href="#/detail/${pokemon.id}">
+            <div class="d-grid gap-2">
+                    <button class="btn custom-button-white" type="button">
+                        Detail
+                    </button>
+            </div>
+            </a>
+        </div>
+</div>
+</div>
+`;
+
+
 const createPokemonItemTemplate = (pokemon) => 
 `
 <div class = "col-md-4 col-lg-4 col-sm-12 mt-3"> 
@@ -37,6 +58,18 @@ const createPokemonDetailTemplate = (pokemon) =>
     </div> 
 `;
 
+const createCatchButtonTemplate = () => `
+  <button aria-label="like this movie" id="catchButton" class="catch">
+        Catch
+  </button>
+`;
+ 
+const createReleaseButtonTemplate = () => `
+  <button aria-label="unlike this movie" id="catchButton" class="catch">
+    Release
+  </button>
+`;
+
  
 const getPokemonId = (pokemon) =>{
     return pokemon.url.split('/')[6];
@@ -50,5 +83,11 @@ const getPokemonType = (pokemon) =>{
     return typeString;
 }
 
-export {createPokemonItemTemplate, createPokemonDetailTemplate};
+export {
+    createPokemonCatchTemplate,
+    createPokemonItemTemplate, 
+    createPokemonDetailTemplate,
+    createReleaseButtonTemplate,
+    createCatchButtonTemplate
+    };
 

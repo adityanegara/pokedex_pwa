@@ -88,7 +88,7 @@ nav{
     margin-left: 5vw;
     margin-right: 5vw;
     border-bottom: 3px solid $white-color;
-    border-radius: px;
+    border-radius: 3px;
   
     ul{
         li{
@@ -113,4 +113,25 @@ nav{
     .navbar-brand:hover{
         color: $secondary-color;
     }
+}
+
+// like
+.catch {
+    z-index: 10;
+    font-size: 18px;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: $white-color;
+    color: $secondary-color;
+    border: 0;
+    border-radius: 10px;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
